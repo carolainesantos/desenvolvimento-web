@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulários</title>
+        <script>
+            let nome = prompt("Digite seu nome");
+            alert('Ola Mundo! Seja bem vindo '+nome);
+        </script>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <form action="">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="txtNome">Nome:</label>
+                    <input type="text" id="txtNome" name="txtNome" placeholder="Nome">
+                    <br> 
+                    <label for="txtSobrenome">Sobrenome:</label>
+                    <input type="text" id="txtSobrenome" name="txtSobrenome">
+                    <br>
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Email">
+                    <br>
+                    <label for="txtSenha">Senha:</label>
+                    <input type="password" id="txtSenha" name="txtSenha">
+                    <br>
+                    <label for="txtArea">Mensagem:</label>
+                    <br>
+                    <textarea id="txtArea" cols="30" rows="5" name="txtArea"></textarea>
+                </fieldset>  
+                <fieldset>
+                    <legend>Opções</legend>
+                    <label for="txtCarros">Tipos de Carros:</label>
+                    <select name="txtCarros" id="txtCarros">
+                        <option value="">-- Selecione --</option>
+                        <option value="fusca">Fusca</option>
+                        <option value="chevete">Chevete</option>
+                        <option value="marea">Marea</option>
+                        <option value="tesla">Tesla</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" id="autorizacao" name="autorizacao"><label for="autorizacao">Autorizo a divulgação dos seus dados</label>
+                    <br>
+                    <input type="checkbox" id="rim" name="rim"><label for="rim">Autorizo a doar meu rim</label>
+                    <br>
+                    <input type="checkbox" id="retirar" name="retirar"><label for="retirar">Quero ser retirado da sala de aula pelo professor!!!</label>
+                    <br>
+                    <br>
+                    <h3>O que você prefere?</h3>
+                    <input type="radio" name="preferencia"><label for="filmes">Filmes</label>
+                    <input type="radio" name="preferencia"><label for="jogos">Jogos</label>
+                    <input type="radio" name="preferencia"><label for="esportes">Esporte</label>
+                </fieldset>   
+                <fieldset>
+                    <input type="button" value="Enviar" >
+                    <button>
+                        Outro Envio
+                    </button>
+                    <input type="submit" value="Enviar Formulário" name="btnEnviar">
+                    <input type="reset" value="Limpar Formulário" >
+                </fieldset>       
+            </fieldset>    
+        </form>
+    </body>
+</html>        
