@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio DOM</title>
+  <style>
+    .destaque {
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="titulo">Olá Mundo!!</h1>
+  <p class="texto">Primeiro paragrafo</p>
+  <p class="texto">Segundo paragrafo</p>
+  <div id="novaDiv"></div>
+  <a id="meuLink" href="www.google.com.br">Google</a>
+  <script>
+    // a) alterar texto h1
+    let titulo = document.getElementById('titulo');
+    titulo.innerText = 'Boa noite alunos'
+    titulo.style.backgroundColor = 'green'
+    titulo.style.color = 'lightgray'
+    console.log(titulo);
+
+    // b) alterar paragrafo 
+    let paragrafos = document.getElementsByClassName('texto');
+    paragrafos[0].style.color = 'green';
+    paragrafos[1].style.color = 'green';
+
+    // c) 
+    let primeiroParagrafo = document.querySelector('.texto');
+    primeiroParagrafo.innerText = 'Este é um novo paragrafo';
+
+    // d) 
+    let todosParagrafos = document.querySelectorAll('p');
+    console.log(`Existem ${todosParagrafos.length} paragrafos na página!!!`);
+
+    // e)
+    let novoParagrafo = document.createElement('p');
+    novoParagrafo.innerText = 'Este paragrafo foi criado dinamicamente!!!';
+    novoParagrafo.style.color = 'green';
+    novoParagrafo.classList.add('destaque'); // add cor
+    novoParagrafo.classList.remove('destaque'); //remove a cor
+    // novoParagrafo.classList.toggle('destaque'); // alterna a classe 
+
+    let novaDiv = document.getElementById('novaDiv');
+    novaDiv.appendChild(novoParagrafo);
+
+    // Alterando Atributos
+    let link = document.getElementById('meuLink');
+    link.setAttribute('href', 'https://www.netflix.com');
+    console.log(link.getAttribute('href'));
+
+
+  </script>
+
+
+
+  <!-- <input type="button" value="Clique aqui" onclick="carregar()">
+  <script>
+    function carregar() {
+      alert('carregou!!');
+    } -->
+
+</body>
+
+
+</html>
