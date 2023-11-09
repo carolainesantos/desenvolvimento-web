@@ -1,0 +1,25 @@
+body {
+  background-color: darkgreen;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+body h2 {
+  text-align: center;
+  color: #f1f1f1;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 35px;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 6px 5px 5px;
+  border-radius: 5px;
+  background-color: azure;
+}
+label {
+  color: aqua;
+}
+p {
+  color: cornsilk;
+}
