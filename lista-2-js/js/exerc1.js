@@ -1,18 +1,19 @@
-function calcularDuracao() {
-  var titulo = document.getElementById("titulo").value;
-  var duracaoEmMinutos = parseFloat(document.getElementById("duracao").value);
+function calculo() {
+  let titulo = document.querySelector("#inTitulo").value;
+  let duracao = Number(document.querySelector("#inDuracao").value);
 
-  var horas = Math.floor(duracaoEmMinutos / 60);
-  var minutos = duracaoEmMinutos % 60;
+  let horas = Math.floor(duracao / 60);
+  let minutos = duracao % 60;
 
-  var resultado = document.getElementById("resultado");
-  resultado.innerHTML =
-    "<p><strong>Título do Filme:</strong> " +
-    titulo +
-    "</p>" +
-    "<p><strong>Duração:</strong> " +
-    horas +
-    " horas e " +
-    minutos +
-    " minutos</p>";
+  // Saida de dados
+  let outTitulo = document.querySelector("#outTitulo");
+  let outDuracao = document.querySelector("#outDuracao");
+
+  outTitulo.innerText = `Título: ${titulo}`;
+  outDuracao.innerText = `Duracao: ${horas} hora(s) e ${minutos} min.`;
 }
+
+let botao = document.querySelector("#botao");
+botao.addEventListener("click", function () {
+  calculo();
+});

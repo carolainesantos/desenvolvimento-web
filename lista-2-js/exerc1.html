@@ -11,16 +11,14 @@
 <body>
   <h2>Vídeo Locadora JS</h2>
 
-  <label for="titulo">Título do Filme:</label><br>
-  <input type="text" id="titulo" placeholder="Digite o título do filme"><br><br>
-
-  <label for="duracao">Duração (minutos):</label><br>
-  <input type="number" id="duracao" placeholder="Digite a duração em minutos"><br><br>
-
-  <button onclick="calcularDuracao()">Converter em Horas e Minutos</button>
-
-  <div id="resultado"></div>
-
+  <p>Título do Filme: <br><input type="text" id="inTitulo"></p>
+  <p>Duração (minutos): <br><input type="text" id="inDuracao"></p>
+  <p>
+    <input type="button" id="botao" value="Converter em Horas e Minutos">
+  </p>
+  <span id="outTitulo"></span>
+  <br>
+  <span id="outDuracao"></span>
   <script src="./js/exerc1.js"></script>
 </body>
 

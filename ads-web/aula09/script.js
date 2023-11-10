@@ -14,3 +14,13 @@ function mostrarOla() {
   let inputNome = document.querySelector("#nome").value;
   document.querySelector("#mensagem").textContent = "Olá " + inputNome;
 }
+
+function mostrarOla2() {
+  let inputNome = document.querySelector("#nome").value;
+  document.querySelector("#mensagem2").textContent = "Olá 2 " + inputNome;
+}
+
+let botao = document.querySelector("#botao");
+botao.addEventListener("click", function () {
+  mostrarOla2();
+});
