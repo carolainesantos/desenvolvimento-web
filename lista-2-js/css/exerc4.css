@@ -1,0 +1,26 @@
+body {
+  background-color: cornflowerblue;
+  text-align: center;
+  margin-top: 90px;
+}
+h1 {
+  font-family: cursive;
+  font-size: 39px;
+  color: beige;
+}
+p {
+  color: aquamarine;
+  font-size: 23px;
+}
+input {
+  padding: 5px;
+}
+#botao {
+  color: darkgreen;
+  border-color: #f5f5f5;
+  font-size: 15px;
+  background-color: #f5f5f5;
+}
+#botao:hover {
+  background-color: rgb(46, 235, 235);
+}
