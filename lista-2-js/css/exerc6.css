@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  margin-top: 90px;
+  background-color: rgb(235, 145, 193);
+}
+h1 {
+  font-family: monospace;
+  color: #f5f5f5;
+  font-size: 40px;
+}
+p {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+input {
+  font-family: cursive;
+  background-color: #f5f5f5;
+  border: #f5f5f5;
+  padding: 5px;
+}
+#botao {
+  color: navajowhite;
+  border-color: #f5f5f5;
+  font-size: 15px;
+  background-color: deeppink;
+}
+#botao:hover {
+  background-color: fuchsia;
+}
