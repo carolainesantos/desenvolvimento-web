@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery</title>
+</head>
+
+<body>
+  <div clas="text-center text-to-hide">
+    <span id="spanHide">Me Esconda</span>
+  </div>
+  <p id="paragrafo">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolorem veniam a commodi illo eveniet saepe, vero facere harum esse natus, similique impedit! Aperiam adipisci tempore id asperiores numquam magni.
+  </p>
+  <button>Clique aqui!</button>
+  <button>Esconder!</button>
+  <button>Mostrar !</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      alert("Olá");
+      $("span").hide();
+
+      $('button').click(function () {
+        $('#paragrafo').hide();
+      })
+
+      $('p').click(function () {
+        $('Cliquei em um paragrafo')
+      })
+    });
+  </script>
+</body>
+
+</html>
